@@ -1,6 +1,5 @@
 import asyncWrapper from "../middleware/asyncWrapper.js";
 import stripe from "stripe";
-import { StatusCodes } from "http-status-codes";
 
 const stripeController = asyncWrapper(async (req, res) => {
   const stripeClient = stripe(process.env.STRIPE_API_KEY);
